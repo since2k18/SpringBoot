@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Movie List</title>
+	</head>
+		<body>
+			<h2>Movie List</h2>
+			<table border=1>
+				<tr>
+					<th>Movie Name</th>
+					<th>Movie Description</th>
+					<th>Actor Name</th>
+				</tr>
+			
+				<tr th:each="setValues : ${movies}">
+				    <td th:text="${setValues.name}"></td>	
+					<td th:text="${setValues.description}"></td>
+				    <td th:text="${setValues.actor}"></td>
+			    </tr>
+			</table>
+		</body>
+</html>
